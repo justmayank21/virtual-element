@@ -1,0 +1,202 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'RollNum'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'RollNum'
+annotate view ZC_MARKS_TABLE with
+{
+  @EndUserText.label: 'RollNum'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'RollNum'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'RollNum'
+  } ]
+  
+  RollNum;
+  
+  @EndUserText.label: 'First Name'
+  @UI.identification: [ {
+    position: 15 , 
+    label: 'First Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 15 , 
+    label: 'First Name'
+  } ]
+  @UI.selectionField: [ {
+    position: 15 
+  } ]
+  FirstName;
+  
+  @EndUserText.label: 'Last Name'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Last Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Last Name'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  LastName;
+  
+  
+  @EndUserText.label: 'Full Name'
+  @UI.identification: [ {
+    position: 25 , 
+    label: 'Full Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 25 , 
+    label: 'Full Name'
+  } ]
+  full_name;
+  
+  @EndUserText.label: 'Class'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Class'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Class'
+  } ]
+ 
+  Class;
+  
+  @EndUserText.label: 'Total Marks'
+  @UI.identification: [ {
+    position: 35 , 
+    label: 'Total Marks'
+  } ]
+  @UI.lineItem: [ {
+    position: 35 , 
+    label: 'Total Marks'
+  } ]
+  
+  TotalMarks;
+  
+  @EndUserText.label: 'Marks Obtained'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Marks Obtained'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Marks Obtained'
+  } ]
+  
+  MarksObt;
+  
+//  @EndUserText.label: 'Changing Operation'
+//  @UI.identification: [ {
+//    position: 45 , 
+//    label: 'Changing Operation'
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 45 , 
+//    label: 'Changing Operation'
+//  } ]
+//  
+//  ChangingOperation;
+  
+  @EndUserText.label: 'Percentage'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Percentage'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Percentage'
+  } ]
+  percentage;
+  
+  @EndUserText.label: 'Full Name And Percentage'
+  @UI.identification: [ {
+    position: 55 , 
+    label: 'Full Name And Percentage'
+  } ]
+  @UI.lineItem: [ {
+    position: 55 , 
+    label: 'Full Name And Percentage'
+  } ]
+  full_name_with_percentage;
+ 
+ @EndUserText.label: 'Grade'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Grade'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Grade'
+  } ] 
+  grade;
+ 
+ @EndUserText.label: 'Final Result'
+  @UI.identification: [ {
+    position: 65 , 
+    label: 'Final result'
+  } ]
+  @UI.lineItem: [ {
+    position: 65 , 
+    label: 'Final Result'
+  } ] 
+  FinalResult;
+  
+//  @UI.identification: [ {
+//    position: 70 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 70 
+//  } ]
+//  @UI.selectionField: [ {
+//    position: 70 
+//  } ]
+//  LocalLastChanged;
+//  
+//  @UI.identification: [ {
+//    position: 80 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 80 
+//  } ]
+//  @UI.selectionField: [ {
+//    position: 80 
+//  } ]
+//  LastChanged;
+//  
+//  @UI.identification: [ {
+//    position: 90 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 90 
+//  } ]
+//  @UI.selectionField: [ {
+//    position: 90 
+//  } ]
+//  CreationUser;
+//  
+//  @UI.identification: [ {
+//    position: 100 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 100 
+//  } ]
+//  @UI.selectionField: [ {
+//    position: 100 
+//  } ]
+//  ChangeUser;
+}

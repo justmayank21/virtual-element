@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_MARKS_TABLE'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_MARKS_TABLE'
+  }
+}
+define service ZUI_MARKS_TABLE_O4
+  provider contracts odata_v2_ui {
+  expose ZC_MARKS_TABLE;
+}

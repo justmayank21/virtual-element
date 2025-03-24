@@ -1,0 +1,48 @@
+managed implementation in class ZBP_R_MARKS_TABLE unique;
+//strict ( 2 );
+with draft;
+define behavior for ZR_MARKS_TABLE alias ZrMarksTable
+persistent table ZMARKS_TABLE
+with additional save
+draft table ZMARKS_TABLE_D
+etag master LocalLastChanged
+lock master total etag LastChanged
+authorization master( global )
+
+{
+  field ( readonly )
+   RollNum,
+   LocalLastChanged,
+   LastChanged,
+   CreationUser,
+   ChangeUser;
+
+  field ( numbering : managed )
+   RollNum;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZMARKS_TABLE
+  {
+    RollNum = roll_num;
+    FirstName = first_name;
+    LastName = last_name;
+    Class = class;
+    TotalMarks = total_marks;
+    MarksObt = marks_obt;
+    LocalLastChanged = local_last_changed;
+    LastChanged = last_changed;
+    CreationUser = creation_user;
+    ChangeUser = change_user;
+
+  }
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'service def for marks and custom'
+define service Zsd_marks_15592 {
+  expose ZC_MARKS_TABLE;
+  expose zchng_docu_15592;
+}
